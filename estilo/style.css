@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.logo {
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 150%;
+    margin-left: 10%;
+    width: 50px;
+}
+
+.nav-itens {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Adiciona espaçamento entre os itens */
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-itens > a {
+    font-size: 120%;
+    font-weight: 800;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.navv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    border: none;
+}

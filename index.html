@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Lakers</title>
+    <link rel="stylesheet" href="estilo/stylelogin.css">
+</head>
+<body>
+
+    <main>
+        <div class="logo">Logo</div>
+
+        <div class="Login">
+            <h1>Faça seu Login</h1>
+
+            <label for="iemail">Email</label>
+            <input type="email" name="email" id="iemail"><br>
+
+            <label for="isenha">Senha</label>
+            <input type="password" name="senha" id="isenha"><br>
+
+            <input type="button" value="Entrar" onclick="entrar()">
+        </div>
+
+        <div class="ajuda"><a href="#">Ajuda</a></div>
+    </main>
+
+    <script>
+
+        function entrar(){
+            var eml = document.getElementById('iemail').value
+            var snh = document.getElementById('isenha').value
+
+            if((eml == "luannbarbosalb@icloud.com") && (snh == 1234567)) {
+                window.location.href = "http://127.0.0.1:3000/principal.html"
+            } else {
+                document.writeln('Email ou senha errada')
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
